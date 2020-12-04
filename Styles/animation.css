@@ -9,3 +9,8 @@
     opacity: 0.75;
   }
 }
+@keyframes nav-hover-animate {
+  to {
+    width: 100%;
+  }
+}

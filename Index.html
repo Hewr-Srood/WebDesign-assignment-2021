@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebDesign Assignment</title>
     <link rel="stylesheet" href="./Styles//style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
 </head>
 
 <body>
@@ -15,14 +18,24 @@
     </header>
     <nav>
         <ul class="nav-ul horizontal-spacing">
-            <li> <a class="active-link" href="">Home</a> </li>
-            <li> <a href="">Blog</a> </li>
-            <li> <a href="">Schedule</a> </li>
-            <li> <a href="">Layout Design</a></li>
-            <li> <a href="">Signin</a> </li>
-            <li> <a href="">Signup</a> </li>
+            <li class="nav-list-item"> <a class="active-link nav-link" href="">Home</a> </li>
+            <li class="nav-list-item"> <a class="nav-link" href="">Blog</a> </li>
+            <li class="nav-list-item"> <a class="nav-link" href="">Schedule</a> </li>
+            <li class="dropdown nav-list-item">
+                <button class="dropdown-btn">Layout Design <i class="fas fa-caret-down"></i></button>
+                <ul class="dopdown-list">
+                    <li><a class="dropdown-down-link" href="">Float Layout with Side nav</a></li>
+                    <li><a class="dropdown-down-link" href="">Flexbox Layout with Side nav</a> </li>
+                    <li><a class="dropdown-down-link" href="">Blog Grid View</a></li>
+                </ul>
+            </li>
+            <li class="nav-list-item"> <a class="nav-link" href="">Signin</a> </li>
+            <li class="nav-list-item"> <a class="nav-link" href="">Signup</a> </li>
+
+
         </ul>
     </nav>
+
 </body>
 <main>
 
