@@ -1,4 +1,4 @@
-@import "./animation.css";
+@import './animation.css';
 :root {
   --space-x: 10rem;
 }
@@ -17,8 +17,8 @@ a {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 /* header */
 .page-header {
@@ -35,7 +35,7 @@ body {
 }
 
 /* nav */
-nav {
+.page-nav {
   background-color: #fff;
 }
 .nav-ul {
@@ -59,7 +59,7 @@ nav {
   transition: color ease 0.4s;
 }
 .nav-link::before {
-  content: "";
+  content: '';
   display: none;
   position: absolute;
   top: 0;
@@ -76,7 +76,7 @@ nav {
   animation: nav-hover-animate 0.4s ease forwards;
 }
 .active-link::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -139,32 +139,35 @@ nav {
 .dropdown:hover .dropdown-btn i {
   color: #bc59a9;
 }
+
 /* main */
+
+/* hero section */
 #hero-section {
   position: relative;
   width: 100%;
   min-height: 400px;
-  padding: 3rem;
 }
 .wave-container {
   z-index: 1;
   position: absolute;
-  top: 0;
+  left: 0;
+  padding-top: 1rem;
   width: 100%;
   height: 100%;
-  left: 0;
 }
 .wave-container svg path {
   animation: animate-hero-svg 8s ease-in-out infinite;
   -webkit-animation: animate-hero-svg 8s ease-in-out infinite;
 }
-
+/* slider */
 .my-slider {
   position: relative;
   z-index: 1;
   transform-origin: center;
   width: calc(100vw - (var(--space-x) * 2));
   margin: 0 auto;
+  padding-top: 5rem;
 }
 
 .slider-img-container {
@@ -240,9 +243,12 @@ nav {
 .indicator-container button img {
   width: inherit;
 }
+
+/* card setion */
 .card-secton {
   display: flex;
   padding-bottom: 5rem;
+  padding-top: 5rem;
   justify-content: space-between;
 }
 .card-link {
@@ -266,11 +272,14 @@ nav {
 .card-text {
   font-weight: 500;
 }
+
+/* recent blogs section */
 .section-heading {
   text-align: center;
   font-size: 2rem;
   background-color: #a4508b;
   background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -302,9 +311,78 @@ nav {
 .blog-img {
   border-radius: 15px;
   flex: 1;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 .blog-img img {
   border-radius: 15px;
   width: 30vw;
   height: 100%;
+}
+/* footer */
+footer {
+  height: 400px;
+  overflow: hidden;
+}
+.footer-background {
+  position: relative;
+}
+.footer-wave {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.footer-content {
+  position: absolute;
+  z-index: 2;
+  height: inherit;
+  width: 100%;
+}
+
+.footer-list {
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  list-style: none;
+  align-items: center;
+}
+.footer-list h3 {
+  color: rgb(204, 186, 252);
+}
+
+.footer-nav {
+  padding-top: 1rem;
+  display: flex;
+}
+.footer-nav-list {
+  list-style: none;
+  text-align: left;
+}
+.footer-nav-list li a {
+  color: #fff;
+  transition: color 0.2s ease;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -ms-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+}
+.footer-nav-list li {
+  padding: 0.3rem;
+}
+.footer-nav-list li:hover a {
+  color: #281ac8;
+}
+.contact-list {
+  display: flex;
+  flex-direction: column;
+}
+.contact-list {
+  color: #fff;
+}
+.contact-list i {
+  color: #b7c3d0;
+  padding-right: 10px;
 }

@@ -1,169 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebDesign Assignment</title>
     <link rel="stylesheet" href="./Styles//style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
+  <body>
     <header class="horizontal-spacing page-header">
-        <img class="logo" alt="logo" src="https://img.icons8.com/cute-clipart/64/000000/application-window.png" />
-        <h1>Hewr Srood</h1>
+      <img
+        class="logo"
+        alt="logo"
+        src="https://img.icons8.com/cute-clipart/64/000000/application-window.png"
+      />
+      <h1>Hewr Srood</h1>
     </header>
-    <nav>
-        <ul class="nav-ul horizontal-spacing">
-            <li class="nav-list-item">
-                <a class="active-link nav-link" href="">Home</a>
+    <nav class="page-nav">
+      <ul class="nav-ul horizontal-spacing">
+        <li class="nav-list-item">
+          <a class="active-link nav-link" href="">Home</a>
+        </li>
+        <li class="nav-list-item"><a class="nav-link" href="">Blog</a></li>
+        <li class="nav-list-item"><a class="nav-link" href="">Schedule</a></li>
+        <li class="dropdown nav-list-item">
+          <button class="dropdown-btn">
+            Layout Design <i class="fas fa-caret-down"></i>
+          </button>
+          <ul class="dopdown-list">
+            <li>
+              <a class="dropdown-down-link" href=""
+                >Float Layout with Side nav</a
+              >
             </li>
-            <li class="nav-list-item"><a class="nav-link" href="">Blog</a></li>
-            <li class="nav-list-item"><a class="nav-link" href="">Schedule</a></li>
-            <li class="dropdown nav-list-item">
-                <button class="dropdown-btn">
-                    Layout Design <i class="fas fa-caret-down"></i>
-                </button>
-                <ul class="dopdown-list">
-                    <li>
-                        <a class="dropdown-down-link" href="">Float Layout with Side nav</a>
-                    </li>
-                    <li>
-                        <a class="dropdown-down-link" href="">Flexbox Layout with Side nav</a>
-                    </li>
-                    <li><a class="dropdown-down-link" href="">Blog Grid View</a></li>
-                </ul>
+            <li>
+              <a class="dropdown-down-link" href=""
+                >Flexbox Layout with Side nav</a
+              >
             </li>
-            <li class="nav-list-item"><a class="nav-link" href="">Sign in</a></li>
-            <li class="nav-list-item"><a class="nav-link" href="">Sign up</a></li>
-        </ul>
+            <li><a class="dropdown-down-link" href="">Blog Grid View</a></li>
+          </ul>
+        </li>
+        <li class="nav-list-item"><a class="nav-link" href="">Sign in</a></li>
+        <li class="nav-list-item"><a class="nav-link" href="">Sign up</a></li>
+      </ul>
     </nav>
-</body>
-<main>
+  </body>
+  <main>
     <section id="hero-section">
-        <div class="wave-container">
-            <svg viewBox="0 0 1500 705" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1500 0H0V620.921C21.658 631.357 82.8109 644.048 255.118 627.995C329.936 621.024 400.521 604.973 470.838 588.982C645.373 549.29 818.263 509.973 1050.17 610.827C1288.71 714.568 1437.56 709.463 1500 699.356V0Z"
-                    fill="url(#paint0_linear)" />
-                <defs>
-                    <linearGradient id="paint0_linear" x1="871" y1="-174.163" x2="933.712" y2="1123.83"
-                        gradientUnits="userSpaceOnUse">
-                        <stop offset="0.0230714" stop-color="#FD749B" />
-                        <stop offset="0.661385" stop-color="#281AC8" />
-                    </linearGradient>
-                </defs>
-            </svg>
+      <div class="wave-container">
+        <svg
+          viewBox="0 0 1500 705"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M1500 0H0V620.921C21.658 631.357 82.8109 644.048 255.118 627.995C329.936 621.024 400.521 604.973 470.838 588.982C645.373 549.29 818.263 509.973 1050.17 610.827C1288.71 714.568 1437.56 709.463 1500 699.356V0Z"
+            fill="url(#paint0_linear)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear"
+              x1="871"
+              y1="-174.163"
+              x2="933.712"
+              y2="1123.83"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0.0230714" stop-color="#FD749B" />
+              <stop offset="0.661385" stop-color="#281AC8" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="my-slider">
+        <div class="slider-img-container">
+          <img
+            alt="slide image"
+            src="https://newevolutiondesigns.com/images/freebies/cool-4k-wallpaper-7.jpg"
+          />
         </div>
-        <div class="my-slider">
-            <div class="slider-img-container">
-                <img alt="slide image" src="https://newevolutiondesigns.com/images/freebies/cool-4k-wallpaper-7.jpg" />
-            </div>
-            <div class="button-container">
-                <div class="right-left-btn-container">
-                    <button>
-                        <img alt="right icon" src="https://img.icons8.com/dusk/64/000000/circled-left-2.png" />
-                    </button>
+        <div class="button-container">
+          <div class="right-left-btn-container">
+            <button>
+              <img
+                alt="right icon"
+                src="https://img.icons8.com/dusk/64/000000/circled-left-2.png"
+              />
+            </button>
 
-                    <button>
-                        <img alt="left-icon" src="https://img.icons8.com/dusk/64/000000/circled-right-2.png" />
-                    </button>
-                </div>
-                <div class="indicator-container">
-                    <button>
-                        <img alt="1st indicator" src="https://img.icons8.com/dusk/64/000000/circle.png" />
-                    </button>
-                    <button>
-                        <img alt="2nd indicator" src="https://img.icons8.com/dusk/64/000000/circle.png" />
-                    </button>
-                    <button>
-                        <img alt="3rd indicator" src="https://img.icons8.com/dusk/64/000000/full-moon--v1.png" />
-                    </button>
-                    <button>
-                        <img alt="4th indicator" src="https://img.icons8.com/dusk/64/000000/circle.png" />
-                    </button>
-                </div>
-            </div>
+            <button>
+              <img
+                alt="left-icon"
+                src="https://img.icons8.com/dusk/64/000000/circled-right-2.png"
+              />
+            </button>
+          </div>
+          <div class="indicator-container">
+            <button>
+              <img
+                alt="1st indicator"
+                src="https://img.icons8.com/dusk/64/000000/circle.png"
+              />
+            </button>
+            <button>
+              <img
+                alt="2nd indicator"
+                src="https://img.icons8.com/dusk/64/000000/circle.png"
+              />
+            </button>
+            <button>
+              <img
+                alt="3rd indicator"
+                src="https://img.icons8.com/dusk/64/000000/full-moon--v1.png"
+              />
+            </button>
+            <button>
+              <img
+                alt="4th indicator"
+                src="https://img.icons8.com/dusk/64/000000/circle.png"
+              />
+            </button>
+          </div>
         </div>
+      </div>
     </section>
+    <!-- card section -->
     <section class="horizontal-spacing card-secton">
-        <a class="card-link">
-            <img alt="blog-icon" src="https://img.icons8.com/dusk/96/000000/google-blog-search.png" />
-            <h2 class="card-text">Blog</h2>
-        </a>
-        <a class="card-link">
-            <img alt="sechedule-icon" src="https://img.icons8.com/dusk/96/000000/overtime.png" />
-            <h2 class="card-text">Seminar Shedule</h2>
-        </a>
-        <a class="card-link">
-            <img alt="signup-icon" src="https://img.icons8.com/dusk/96/000000/add-user-male.png" />
-            <h2 class="card-text">Sign up</h2>
-        </a>
-        <a class="card-link">
-            <img alt="signin-icon" src="https://img.icons8.com/dusk/96/000000/user-male.png" />
-            <h2 class="card-text">Sign in</h2>
-        </a>
+      <a class="card-link">
+        <img
+          alt="blog-icon"
+          src="https://img.icons8.com/dusk/96/000000/google-blog-search.png"
+        />
+        <h2 class="card-text">Blog</h2>
+      </a>
+      <a class="card-link">
+        <img
+          alt="sechedule-icon"
+          src="https://img.icons8.com/dusk/96/000000/overtime.png"
+        />
+        <h2 class="card-text">Seminar Shedule</h2>
+      </a>
+      <a class="card-link">
+        <img
+          alt="signup-icon"
+          src="https://img.icons8.com/dusk/96/000000/add-user-male.png"
+        />
+        <h2 class="card-text">Sign up</h2>
+      </a>
+      <a class="card-link">
+        <img
+          alt="signin-icon"
+          src="https://img.icons8.com/dusk/96/000000/user-male.png"
+        />
+        <h2 class="card-text">Sign in</h2>
+      </a>
     </section>
+    <!-- blog section -->
     <section class="blog-section horizontal-spacing">
-        <h1 class="section-heading">Recent Articles</h1>
-        <article class="blog-article">
-
-            <section class="blog-img">
-                <img src="https://c4.wallpaperflare.com/wallpaper/235/349/162/xiaomi-brand-yellow-minimalism-wallpaper-preview.jpg"
-                    alt="">
-            </section>
-            <section class="blog-text">
-                <header class="blog-header">
-                    <h1 class="article-heading">Xiaomi overtook Apple in smartphone sales last quarter</h1>
-                    <h2 class="article-sub-heading"> By<a class="bloger"
-                            href="https://www.engadget.com/about/editors/jon-fingas/"> Jon Fingas </a> On <time
-                            datetime="2020-11-30 13:00">November 30, 2020</time></h2>
-
-
-                </header>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio dolore, officia eveniet deserunt
-                    impedit eos, et modi eum delectus sint ipsa adipisci, saepe aut sequi? Debitis accusantium dolor
-                    eius explicabo veniam cumque. Nulla consectetur non, ipsum accusantium quo nobis, ad odit quibusdam
-                    aliquid obcaecati corporis consequuntur? Fugiat dolores rerum maiores iusto nam perferendis natus
-                    alias, amet, eos nulla minima expedita sunt ad optio, ducimus aut! Ab, numquam quasi, nobis totam
-                    eligendi iure vel doloremque in perspiciatis consequuntur distinctio tenetur voluptatem qui. Ex
-                    quibusdam corrupti distinctio nihil voluptate nostrum laudantium veniam possimus eum sapiente
-                    aliquam ipsam, laborum vel, officiis ullam a.</p>
-            </section>
-
-
-        </article>
-        <article class="blog-article">
-
-            <section class="blog-img">
-                <img src="https://c4.wallpaperflare.com/wallpaper/235/349/162/xiaomi-brand-yellow-minimalism-wallpaper-preview.jpg"
-                    alt="">
-            </section>
-            <section class="blog-text">
-                <header class="blog-header">
-                    <h1 class="article-heading">Xiaomi overtook Apple in smartphone sales last quarter</h1>
-                    <h2 class="article-sub-heading"> By<a class="bloger"
-                            href="https://www.engadget.com/about/editors/jon-fingas/"> Jon Fingas </a> On <time
-                            datetime="2020-11-30 13:00">November 30, 2020</time></h2>
-
-
-                </header>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio dolore, officia eveniet deserunt
-                    impedit eos, et modi eum delectus sint ipsa adipisci, saepe aut sequi? Debitis accusantium dolor
-                    eius explicabo veniam cumque. Nulla consectetur non, ipsum accusantium quo nobis, ad odit quibusdam
-                    aliquid obcaecati corporis consequuntur? Fugiat dolores rerum maiores iusto nam perferendis natus
-                    alias, amet, eos nulla minima expedita sunt ad optio, ducimus aut! Ab, numquam quasi, nobis totam
-                    eligendi iure vel doloremque in perspiciatis consequuntur distinctio tenetur voluptatem qui. Ex
-                    quibusdam corrupti distinctio nihil voluptate nostrum laudantium veniam possimus eum sapiente
-                    aliquam ipsam, laborum vel, officiis ullam a.</p>
-            </section>
-
-
-        </article>
+      <h1 class="section-heading">Recent Articles</h1>
+      <article class="blog-article">
+        <section class="blog-img">
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/235/349/162/xiaomi-brand-yellow-minimalism-wallpaper-preview.jpg"
+            alt=""
+          />
+        </section>
+        <section class="blog-text">
+          <header class="blog-header">
+            <h1 class="article-heading">
+              Xiaomi overtook Apple in smartphone sales last quarter
+            </h1>
+            <h2 class="article-sub-heading">
+              By<a
+                class="bloger"
+                href="https://www.engadget.com/about/editors/jon-fingas/"
+              >
+                Jon Fingas
+              </a>
+              On <time datetime="2020-11-30 13:00">November 30, 2020</time>
+            </h2>
+          </header>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+            dolore, officia eveniet deserunt impedit eos, et modi eum delectus
+            sint ipsa adipisci, saepe aut sequi? Debitis accusantium dolor eius
+            explicabo veniam cumque. Nulla consectetur non, ipsum accusantium
+            quo nobis, ad odit quibusdam aliquid obcaecati corporis
+            consequuntur? Fugiat dolores rerum maiores iusto nam perferendis
+            natus alias, amet, eos nulla minima expedita sunt ad optio, ducimus
+            aut! Ab, numquam quasi, nobis totam eligendi iure vel doloremque in
+            perspiciatis consequuntur distinctio tenetur voluptatem qui. Ex
+            quibusdam corrupti distinctio nihil voluptate nostrum laudantium
+            veniam possimus eum sapiente aliquam ipsam, laborum vel, officiis
+            ullam a.
+          </p>
+        </section>
+      </article>
+      <article class="blog-article">
+        <section class="blog-img">
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/235/349/162/xiaomi-brand-yellow-minimalism-wallpaper-preview.jpg"
+            alt=""
+          />
+        </section>
+        <section class="blog-text">
+          <header class="blog-header">
+            <h1 class="article-heading">
+              Xiaomi overtook Apple in smartphone sales last quarter
+            </h1>
+            <h2 class="article-sub-heading">
+              By<a
+                class="bloger"
+                href="https://www.engadget.com/about/editors/jon-fingas/"
+              >
+                Jon Fingas
+              </a>
+              On <time datetime="2020-11-30 13:00">November 30, 2020</time>
+            </h2>
+          </header>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+            dolore, officia eveniet deserunt impedit eos, et modi eum delectus
+            sint ipsa adipisci, saepe aut sequi? Debitis accusantium dolor eius
+            explicabo veniam cumque. Nulla consectetur non, ipsum accusantium
+            quo nobis, ad odit quibusdam aliquid obcaecati corporis
+            consequuntur? Fugiat dolores rerum maiores iusto nam perferendis
+            natus alias, amet, eos nulla minima expedita sunt ad optio, ducimus
+            aut! Ab, numquam quasi, nobis totam eligendi iure vel doloremque in
+            perspiciatis consequuntur distinctio tenetur voluptatem qui. Ex
+            quibusdam corrupti distinctio nihil voluptate nostrum laudantium
+            veniam possimus eum sapiente aliquam ipsam, laborum vel, officiis
+            ullam a.
+          </p>
+        </section>
+      </article>
     </section>
-</main>
+  </main>
 
+  <footer>
+    <div class="footer-background">
+      <div class="footer-wave">
+        <svg
+          viewBox="0 0 1500 544"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M0 42.0158C40.6171 39.1937 108.995 38.4637 224.072 44.2393C303.504 48.2259 378.441 57.4064 453.095 66.5521C638.392 89.2527 821.942 111.739 1068.15 54.0581C1274.98 5.59991 1418.3 -1.33374 1500 0.901641V544H0V42.0158Z"
+            fill="url(#paint0_linear)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear"
+              x1="825"
+              y1="-85.0068"
+              x2="836.119"
+              y2="878.572"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#FD749B" />
+              <stop offset="1" stop-color="#281AC8" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <div class="footer-content horizontal-spacing">
+      <ul class="footer-list">
+        <li>
+          <h3>Sitemap</h3>
+          <nav class="footer-nav">
+            <ul class="footer-nav-list">
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Login</a></li>
+            </ul>
+          </nav>
+        </li>
+        <li class="terms">
+          <h3>Terms and Quick Links</h3>
+          <nav class="footer-nav">
+            <ul class="footer-nav-list">
+              <li><a href="">Terms of usage</a></li>
+              <li><a href="">Link 1</a></li>
+              <li><a href="">Link 2</a></li>
+              <li><a href="">Link 3</a></li>
+            </ul>
+          </nav>
+        </li>
+        <li class="contact">
+          <h3>Adress and Contact</h3>
+          <nav class="footer-nav">
+            <ul class="footer-nav-list contact-list">
+              <li><i class="fas fa-map-marker-alt"></i>Erbil - KRG Iraq</li>
+              <li><i class="fas fa-phone-alt"></i>+964 750 861 7341</li>
+              <li><i class="far fa-envelope"></i>Hewr_s@outlook.com</li>
+            </ul>
+          </nav>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </html>
