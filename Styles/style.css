@@ -283,7 +283,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.blog-article {
+.recent-article {
   display: flex;
   background: #b7c3d0;
   padding: 1rem;
@@ -292,14 +292,14 @@ body {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
-.blog-article:nth-child(odd) {
+.recent-article:nth-child(odd) {
   flex-direction: row-reverse;
 }
-.blog-text {
+.article-text {
   flex: 2;
   padding-left: 1rem;
 }
-.blog-header {
+.article-header {
   color: #fff;
 }
 .article-heading {
@@ -308,7 +308,7 @@ body {
 .article-sub-heading {
   font-size: 20px;
 }
-.blog-img {
+.article-img {
   border-radius: 15px;
   flex: 1;
   -webkit-border-radius: 15px;
@@ -316,10 +316,14 @@ body {
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
 }
-.blog-img img {
+.article-img img {
   border-radius: 15px;
   width: 30vw;
   height: 100%;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 /* footer */
 footer {
