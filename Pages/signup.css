@@ -1,0 +1,43 @@
+#signup-form {
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+.input {
+  width: 100%;
+  background: #bc59aa;
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border-width: 3px 3px 5px 3px;
+  border-style: solid;
+
+  border-color: #ececf8;
+  border-radius: 15px 15px 0 0;
+}
+.input[type="color"] {
+  height: 50px;
+  padding: 0;
+  background: none;
+}
+.input::placeholder {
+  color: #fff;
+  background: #bc59aa;
+}
+#form-fieldset {
+  padding: 1rem;
+  border-width: 3px 3px 5px 3px;
+  border-style: solid;
+  border-color: #ececf8;
+}
+#form-fieldset legend {
+  border-width: 3px 3px 5px 3px;
+  border-style: solid;
+  border-color: #ececf8;
+  background: #bc59aa;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
