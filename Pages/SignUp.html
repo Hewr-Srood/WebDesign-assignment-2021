@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="WebDesign Assignment 2021" />
     <title>WebDesign Assignment</title>
-    <link rel="stylesheet" href="../Styles//style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./signup.css" />
+    <link rel="stylesheet" href="../css/signup.css" />
   </head>
 
   <body>
@@ -131,7 +131,7 @@
             name="p-color"
             required
           />
-          <fieldset id="form-fieldset">
+          <fieldset class="form-fieldset">
             <legend>Marital Status</legend>
             <input
               type="radio"
@@ -156,7 +156,7 @@
             <label for="private">It's Private</label>
           </fieldset>
           <label for="children">No. of Children</label>
-          <select class="input" name="cars" id="children">
+          <select class="input" name="cars" id="children" required>
             <option value="0" selected>None</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -164,17 +164,48 @@
             <option value="3">4</option>
           </select>
 
-          <label>User Message:</label>
+          <label for="degree">Choose your degrees</label>
+          <select class="input" name="degree" multiple id="degree" required>
+            <option value="Diploma" selected>Diploma</option>
+            <option value="BSc">Bachelore of Science (BSc)</option>
+            <option value="BA">Bachelore of Art (BA)</option>
+            <option value="High Diploma">High Diploma</option>
+            <option value="MSc">Master of Science (MSc)</option>
+            <option value="MA">Master of Arts (MA)</option>
+            <option value="PhD">Philosophy of Doctorate</option>
+          </select>
+          <label for="description">About Yourself</label>
           <textarea
+            class="input"
+            placeholder="About Yourself"
             type=" text"
+            id="description"
             name="userMessage"
-            class="form-control"
             rows="4"
-            ng-model="message"
-            ng-minlength="10"
-            ng-maxlength="100"
             required
           ></textarea>
+          <label for="cv">Upload your CV</label>
+          <input class="input" type="file" id="cv" required />
+          <fieldset class="form-fieldset">
+            <legend>Gender</legend>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label><br />
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Male</label><br />
+          </fieldset>
+
+          <fieldset class="form-fieldset">
+            <legend>Agrrements</legend>
+            <input type="checkbox" id="terms" name="terms" required />
+            <label for="agree">I have read all the terms</label><br />
+            <input type="checkbox" id="agree" name="agrrements" required />
+            <label for="agree">Yes, I agree</label><br />
+          </fieldset>
+
+          <div class="signup-btn-container">
+            <button type="submit" class="form-btn primary">Signup</button>
+            <button class="form-btn secondary">Reset</button>
+          </div>
         </form>
       </section>
     </main>
