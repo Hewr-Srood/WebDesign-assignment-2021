@@ -1,0 +1,24 @@
+
+#schedule {
+  width: 100%;
+  border: 2px solid #ECECF8;
+  border-collapse: collapse;
+  
+}
+#schedule  th{
+  color: #bc59a9;
+  text-align: center;
+  border: 2px solid #ECECF8;
+
+}
+#schedule-table-header th {
+  border: 2px solid #ECECF8;
+  background-color: #dbdbdb;
+  padding: 10px;
+  border-bottom: 4px #ECECF8 solid;
+}
+#schedule-table-body td {
+  border: 2px solid #ECECF8;
+  font-weight: 500;
+  padding: 10px;
+}

@@ -1,0 +1,13 @@
+.blog-sec {
+  width: 100%;
+}
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+.blog-img {
+  float: none;
+  width: 100%;
+}

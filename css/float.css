@@ -1,0 +1,11 @@
+.aside{
+    float: right;
+}
+
+.blog-sec{  
+    width: 70%;
+}
+.blog-img {
+    float: none;
+    width: 100%;
+}

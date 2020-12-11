@@ -12,7 +12,7 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/signup.css" />
+    <link rel="stylesheet" href="../css/schedule.css" />
   </head>
 
   <body>
@@ -46,9 +46,9 @@
               >
             </li>
             <li>
-              <a class="dropdown-down-link" href="./Flex.html">
-                Flexbox Layout with Side nav
-              </a>
+              <a class="dropdown-down-link" href="./Flex.html"
+                >Flexbox Layout with Side nav</a
+              >
             </li>
             <li>
               <a class="dropdown-down-link" href="./Grid.html"
@@ -61,162 +61,88 @@
           <a class="nav-link" href="./SignIn.html">Sign in</a>
         </li>
         <li class="nav-list-item">
-          <a class="nav-link" href="./SignUp.html">Sign up</a>
+          <a class="nav-link" href="./Signup.html">Sign up</a>
         </li>
       </ul>
     </nav>
     <main class="horizontal-spacing">
-      <section id="signup-sectin">
-        <h1>Sugnup From</h1>
-        <form id="signup-form">
-          <label for="username">Username</label>
-          <input
-            class="input"
-            type="text"
-            name="username"
-            id="username"
-            placeholder="Username"
-            required
-          />
-
-          <label for="fullname">Full Name:</label>
-          <input
-            class="input"
-            type="text"
-            id="fullname"
-            name="fullname"
-            required
-            placeholder="Full Name"
-          />
-
-          <label for="email">Email </label>
-          <input
-            class="input"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="domain@example.com"
-            required
-          />
-
-          <label for="telephone">Telephone</label>
-          <input
-            class="input"
-            placeholder="00964 000 000 00 00"
-            type="tel"
-            name="telephone"
-            id="telephone"
-            required
-          />
-          <label for="password">Password</label>
-          <input
-            class="input"
-            id="password"
-            placeholder="Password"
-            type="password"
-            name="password"
-            required
-          />
-          <label for="dob">Date of Bith</label>
-          <input
-            class="input"
-            id="dob"
-            placeholder="Date of Birth"
-            type="date"
-            name="dob"
-            required
-          />
-          <label for="p-color">Profile Color</label>
-          <input
-            class="input"
-            placeholder="Proflie Color"
-            type="color"
-            id="p-color"
-            name="p-color"
-            required
-          />
-          <fieldset class="form-fieldset">
-            <legend>Marital Status</legend>
-            <input
-              type="radio"
-              id="single"
-              name="marital-status"
-              value="single"
-            />
-            <label for="single">Single</label><br />
-            <input
-              type="radio"
-              id="married"
-              name="marital-status"
-              value="married"
-            />
-            <label for="married">Married</label><br />
-            <input
-              type="radio"
-              id="private"
-              name="marital-status"
-              value="private"
-            />
-            <label for="private">It's Private</label>
-          </fieldset>
-          <label for="children">No. of Children</label>
-          <select class="input" name="cars" id="children" required>
-            <option value="0" selected>None</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="3">4</option>
-          </select>
-
-          <label for="degree">Choose your degrees</label>
-          <select class="input" name="degree" multiple id="degree" required>
-            <option value="Diploma" selected>Diploma</option>
-            <option value="BSc">Bachelore of Science (BSc)</option>
-            <option value="BA">Bachelore of Art (BA)</option>
-            <option value="High Diploma">High Diploma</option>
-            <option value="MSc">Master of Science (MSc)</option>
-            <option value="MA">Master of Arts (MA)</option>
-            <option value="PhD">Philosophy of Doctorate</option>
-          </select>
-          <label for="description">About Yourself</label>
-          <textarea
-            class="input"
-            placeholder="About Yourself"
-            type=" text"
-            id="description"
-            name="userMessage"
-            rows="4"
-            required
-          ></textarea>
-          <label for="cv">Upload your CV</label>
-          <input class="input" type="file" id="cv" required />
-          <fieldset class="form-fieldset">
-            <legend>Gender</legend>
-            <input type="radio" id="male" name="gender" value="male" />
-            <label for="male">Male</label><br />
-            <input type="radio" id="female" name="gender" value="female" />
-            <label for="female">Male</label><br />
-          </fieldset>
-
-          <fieldset class="form-fieldset">
-            <legend>Agrrements</legend>
-            <input type="checkbox" id="terms" name="terms" required />
-            <label for="agree">I have read all the terms</label><br />
-            <input type="checkbox" id="agree" name="agrrements" required />
-            <label for="agree">Yes, I agree</label><br />
-          </fieldset>
-
-          <div class="signup-btn-container">
-            <button type="submit" class="form-btn primary">Signup</button>
-            <button class="form-btn secondary">Reset</button>
-          </div>
-        </form>
+      <section>
+        <h1 class="section-heading">Seminar Schedule</h1>
+        <table id="schedule">
+          <thead id="schedule-table-header">
+            <tr>
+              <th rowspan="3">Day</th>
+              <th colspan="6">Seminar</th>
+            </tr>
+            <tr>
+              <th colspan="3">Morning Session</th>
+              <th colspan="3">Evening Session</th>
+            </tr>
+            <tr>
+              <th>begin</th>
+              <th>end</th>
+              <th>topic</th>
+              <th>begin</th>
+              <th>end</th>
+              <th>topic</th>
+            </tr>
+          </thead>
+          <tbody id="schedule-table-body">
+            <tr>
+              <th rowspan="2">Monday</th>
+              <td rowspan="2">8:00 AM</td>
+              <td rowspan="2">11:00 AM</td>
+              <td>Introduction o XML</td>
+              <td>1:30 PM</td>
+              <td>3:00 PM</td>
+              <td>HTML Language</td>
+            </tr>
+            <tr>
+              <th>CSS Language</th>
+              <td>3:30 AM</td>
+              <td>5:00 AM</td>
+              <td>Web Accessbility</td>
+            </tr>
+            <tr>
+              <th rowspan="3">Tuesday</th>
+              <td>8:00 AM</td>
+              <td>10:00 AM</td>
+              <td rowspan="2">Introduction to Javascript</td>
+              <td>2:00 PM</td>
+              <td>3:30 PM</td>
+              <td>The DOM</td>
+            </tr>
+            <tr>
+              <td>10:30 AM</td>
+              <td>12:00 AM</td>
+              <td rowspan="2">4:00 PM</td>
+              <td rowspan="2">6:00 PM</td>
+              <td rowspan="2">Advanced Javascript</td>
+            </tr>
+            <tr>
+              <td>9:00 AM</td>
+              <td>11:00 AM</td>
+              <td>Web Design and Bootstrap</td>
+            </tr>
+            <tr>
+              <th>Wednesday</th>
+              <td>9:00 AM</td>
+              <td>11:00 AM</td>
+              <td>Introduction to ReactJS</td>
+              <td>1:00 PM</td>
+              <td>3:00 PM</td>
+              <td>Introduction to NodeJS</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
     <footer>
       <div class="footer-background">
         <div class="footer-wave">
           <svg
+            stroke="#A0AEFA"
+            stroke-width="2"
             viewBox="0 0 1500 544"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -249,7 +175,7 @@
             <h3>Sitemap</h3>
             <nav class="footer-nav">
               <ul class="footer-nav-list">
-                <li><a hhref="#">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Login</a></li>

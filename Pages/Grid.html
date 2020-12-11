@@ -12,7 +12,7 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/signup.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
   </head>
 
   <body>
@@ -64,151 +64,294 @@
       </ul>
     </nav>
     <main class="horizontal-spacing">
-      <section id="signup-sectin">
-        <h1>Sugnup From</h1>
-        <form id="signup-form">
-          <label for="username">Username</label>
-          <input
-            class="input"
-            type="text"
-            name="username"
-            id="username"
-            placeholder="Username"
-            required
-          />
+      <section class="blog-sec">
+        <h1>Grid View Blogs</h1>
+        <div class="grid-container">
+          <article class="blog">
+            <h2 class="blog-heading">
+              Xiaomi overtook Apple in smartphone sales last quarter
+            </h2>
 
-          <label for="fullname">Full Name:</label>
-          <input
-            class="input"
-            type="text"
-            id="fullname"
-            name="fullname"
-            required
-            placeholder="Full Name"
-          />
-
-          <label for="email">Email </label>
-          <input
-            class="input"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="domain@example.com"
-            required
-          />
-
-          <label for="telephone">Telephone</label>
-          <input
-            class="input"
-            placeholder="00964 000 000 00 00"
-            type="tel"
-            name="telephone"
-            id="telephone"
-            required
-          />
-          <label for="password">Password</label>
-          <input
-            class="input"
-            id="password"
-            placeholder="Password"
-            type="password"
-            name="password"
-            required
-          />
-          <label for="dob">Date of Bith</label>
-          <input
-            class="input"
-            id="dob"
-            placeholder="Date of Birth"
-            type="date"
-            name="dob"
-            required
-          />
-          <label for="p-color">Profile Color</label>
-          <input
-            class="input"
-            placeholder="Proflie Color"
-            type="color"
-            id="p-color"
-            name="p-color"
-            required
-          />
-          <fieldset class="form-fieldset">
-            <legend>Marital Status</legend>
-            <input
-              type="radio"
-              id="single"
-              name="marital-status"
-              value="single"
+            <div class="blog-info">
+              <h3 class="blog-sub-heading">
+                By<a
+                  rel="author"
+                  class="bloger"
+                  href="https://www.engadget.com/about/editors/jon-fingas/"
+                >
+                  Jon Fingas
+                </a>
+                On <time datetime="2020-11-30 13:00">November 30, 2020</time>
+              </h3>
+            </div>
+            <img
+              class="blog-img"
+              src="https://c4.wallpaperflare.com/wallpaper/235/349/162/xiaomi-brand-yellow-minimalism-wallpaper-preview.jpg"
+              alt="blog-1"
             />
-            <label for="single">Single</label><br />
-            <input
-              type="radio"
-              id="married"
-              name="marital-status"
-              value="married"
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+              esse aliquid dolor libero culpa veritatis quis porro? Esse
+              voluptatem ducimus amet quae perspiciatis consectetur, cum ab!
+              Vitae, ex! Incidunt atque officiis corrupti et minima a at rerum,
+              sit maiores nulla hic nobis explicabo labore nisi qui
+              reprehenderit ipsum quas enim consequuntur asperiores nemo
+              accusantium dolores omnis? Delectus id sit praesentium autem
+              sapiente, laboriosam similique vero mollitia iste. Sunt, excepturi
+              nam! Voluptas, sit! Nam deserunt quas totam nihil tempore facere
+              fugiat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+              esse aliquid dolor libero culpa veritatis quis porro? Esse
+              voluptatem ducimus amet quae perspiciatis consectetur, cum ab!
+              Vitae, ex! Incidunt atque officiis corrupti et minima a at rerum,
+              sit maiores nulla hic nobis explicabo labore nisi qui
+              reprehenderit ipsum quas enim consequuntur asperiores nemo
+              accusantium dolores omnis? Delectus id sit praesentium autem
+              sapiente, laboriosam similique vero mollitia iste. Sunt, excepturi
+              nam! Voluptas, sit! Nam deserunt quas totam nihil tempore facere
+              fugiat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+              esse aliquid dolor libero culpa veritatis quis porro? Esse
+              voluptatem ducimus amet quae perspiciatis consectetur, cum ab!
+              Vitae, ex! Incidunt atque officiis corrupti et minima a at rerum,
+              sit maiores nulla hic nobis explicabo labore nisi qui
+              reprehenderit ipsum quas enim consequuntur asperiores nemo
+              accusantium dolores omnis? Delectus id sit praesentium autem
+              sapiente, laboriosam similique vero mollitia iste. Sunt, excepturi
+              nam! Voluptas, sit! Nam deserunt quas totam nihil tempore facere
+              fugiat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+              esse aliquid dolor libero culpa veritatis quis porro? Esse
+              voluptatem ducimus amet quae perspiciatis consectetur, cum ab!
+              Vitae, ex! Incidunt atque officiis corrupti et minima a at rerum,
+              sit maiores nulla hic nobis explicabo labore nisi qui
+              reprehenderit ipsum quas enim consequuntur asperiores nemo
+              accusantium dolores omnis? Delectus id sit praesentium autem
+              sapiente, laboriosam similique vero mollitia iste. Sunt, excepturi
+              nam! Voluptas, sit! Nam deserunt quas totam nihil tempore facere
+              fugiat.
+            </p>
+          </article>
+          <article class="blog">
+            <h2 class="blog-heading">
+              Xiaomi overtook Apple in smartphone sales last quarter
+            </h2>
+
+            <div class="blog-info">
+              <h3 class="blog-sub-heading">
+                By<a
+                  rel="author"
+                  class="bloger"
+                  href="https://www.engadget.com/about/editors/jon-fingas/"
+                >
+                  Jon Fingas
+                </a>
+                On <time datetime="2020-11-30 13:00">November 30, 2020</time>
+              </h3>
+            </div>
+            <img
+              class="blog-img"
+              src="https://c4.wallpaperflare.com/wallpaper/235/349/162/xiaomi-brand-yellow-minimalism-wallpaper-preview.jpg"
+              alt="blog-2"
             />
-            <label for="married">Married</label><br />
-            <input
-              type="radio"
-              id="private"
-              name="marital-status"
-              value="private"
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+              esse aliquid dolor libero culpa veritatis quis porro? Esse
+              voluptatem ducimus amet quae perspiciatis consectetur, cum ab!
+              Vitae, ex! Incidunt atque officiis corrupti et minima a at rerum,
+              sit maiores nulla hic nobis explicabo labore nisi qui
+              reprehenderit ipsum quas enim consequuntur asperiores nemo
+              accusantium dolores omnis? Delectus id sit praesentium autem
+              sapiente, laboriosam similique vero mollitia iste. Sunt, excepturi
+              nam! Voluptas, sit! Nam deserunt quas totam nihil tempore facere
+              fugiat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+              esse aliquid dolor libero culpa veritatis quis porro? Esse
+              voluptatem ducimus amet quae perspiciatis consectetur, cum ab!
+              Vitae, ex! Incidunt atque officiis corrupti et minima a at rerum,
+              sit maiores nulla hic nobis explicabo labore nisi qui
+              reprehenderit ipsum quas enim consequuntur asperiores nemo
+              accusantium dolores omnis? Delectus id sit praesentium autem
+              sapiente, laboriosam similique vero mollitia iste. Sunt, excepturi
+              nam! Voluptas, sit! Nam deserunt quas totam nihil tempore facere
+              fugiat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+              esse aliquid dolor libero culpa veritatis quis porro? Esse
+              voluptatem ducimus amet quae perspiciatis consectetur, cum ab!
+              Vitae, ex! Incidunt atque officiis corrupti et minima a at rerum,
+              sit maiores nulla hic nobis explicabo labore nisi qui
+              reprehenderit ipsum quas enim consequuntur asperiores nemo
+              accusantium dolores omnis? Delectus id sit praesentium autem
+              sapiente, laboriosam similique vero mollitia iste. Sunt, excepturi
+              nam! Voluptas, sit! Nam deserunt quas totam nihil tempore facere
+              fugiat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+              esse aliquid dolor libero culpa veritatis quis porro? Esse
+              voluptatem ducimus amet quae perspiciatis consectetur, cum ab!
+              Vitae, ex! Incidunt atque officiis corrupti et minima a at rerum,
+              sit maiores nulla hic nobis explicabo labore nisi qui
+              reprehenderit ipsum quas enim consequuntur asperiores nemo
+              accusantium dolores omnis? Delectus id sit praesentium autem
+              sapiente, laboriosam similique vero mollitia iste. Sunt, excepturi
+              nam! Voluptas, sit! Nam deserunt quas totam nihil tempore facere
+              fugiat.
+            </p>
+          </article>
+          <article class="blog">
+            <h2 class="blog-heading">
+              Xiaomi overtook Apple in smartphone sales last quarter
+            </h2>
+
+            <div class="blog-info">
+              <h3 class="blog-sub-heading">
+                By<a
+                  rel="author"
+                  class="bloger"
+                  href="https://www.engadget.com/about/editors/jon-fingas/"
+                >
+                  Jon Fingas
+                </a>
+                On <time datetime="2020-11-30 13:00">November 30, 2020</time>
+              </h3>
+            </div>
+            <img
+              class="blog-img"
+              src="https://c4.wallpaperflare.com/wallpaper/235/349/162/xiaomi-brand-yellow-minimalism-wallpaper-preview.jpg"
+              alt="blog-2"
             />
-            <label for="private">It's Private</label>
-          </fieldset>
-          <label for="children">No. of Children</label>
-          <select class="input" name="cars" id="children" required>
-            <option value="0" selected>None</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="3">4</option>
-          </select>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+              esse aliquid dolor libero culpa veritatis quis porro? Esse
+              voluptatem ducimus amet quae perspiciatis consectetur, cum ab!
+              Vitae, ex! Incidunt atque officiis corrupti et minima a at rerum,
+              sit maiores nulla hic nobis explicabo labore nisi qui
+              reprehenderit ipsum quas enim consequuntur asperiores nemo
+              accusantium dolores omnis? Delectus id sit praesentium autem
+              sapiente, laboriosam similique vero mollitia iste. Sunt, excepturi
+              nam! Voluptas, sit! Nam deserunt quas totam nihil tempore facere
+              fugiat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+              esse aliquid dolor libero culpa veritatis quis porro? Esse
+              voluptatem ducimus amet quae perspiciatis consectetur, cum ab!
+              Vitae, ex! Incidunt atque officiis corrupti et minima a at rerum,
+              sit maiores nulla hic nobis explicabo labore nisi qui
+              reprehenderit ipsum quas enim consequuntur asperiores nemo
+              accusantium dolores omnis? Delectus id sit praesentium autem
+              sapiente, laboriosam similique vero mollitia iste. Sunt, excepturi
+              nam! Voluptas, sit! Nam deserunt quas totam nihil tempore facere
+              fugiat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+              esse aliquid dolor libero culpa veritatis quis porro? Esse
+              voluptatem ducimus amet quae perspiciatis consectetur, cum ab!
+              Vitae, ex! Incidunt atque officiis corrupti et minima a at rerum,
+              sit maiores nulla hic nobis explicabo labore nisi qui
+              reprehenderit ipsum quas enim consequuntur asperiores nemo
+              accusantium dolores omnis? Delectus id sit praesentium autem
+              sapiente, laboriosam similique vero mollitia iste. Sunt, excepturi
+              nam! Voluptas, sit! Nam deserunt quas totam nihil tempore facere
+              fugiat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+              esse aliquid dolor libero culpa veritatis quis porro? Esse
+              voluptatem ducimus amet quae perspiciatis consectetur, cum ab!
+              Vitae, ex! Incidunt atque officiis corrupti et minima a at rerum,
+              sit maiores nulla hic nobis explicabo labore nisi qui
+              reprehenderit ipsum quas enim consequuntur asperiores nemo
+              accusantium dolores omnis? Delectus id sit praesentium autem
+              sapiente, laboriosam similique vero mollitia iste. Sunt, excepturi
+              nam! Voluptas, sit! Nam deserunt quas totam nihil tempore facere
+              fugiat.
+            </p>
+          </article>
+          <article class="blog">
+            <h2 class="blog-heading">
+              Xiaomi overtook Apple in smartphone sales last quarter
+            </h2>
 
-          <label for="degree">Choose your degrees</label>
-          <select class="input" name="degree" multiple id="degree" required>
-            <option value="Diploma" selected>Diploma</option>
-            <option value="BSc">Bachelore of Science (BSc)</option>
-            <option value="BA">Bachelore of Art (BA)</option>
-            <option value="High Diploma">High Diploma</option>
-            <option value="MSc">Master of Science (MSc)</option>
-            <option value="MA">Master of Arts (MA)</option>
-            <option value="PhD">Philosophy of Doctorate</option>
-          </select>
-          <label for="description">About Yourself</label>
-          <textarea
-            class="input"
-            placeholder="About Yourself"
-            type=" text"
-            id="description"
-            name="userMessage"
-            rows="4"
-            required
-          ></textarea>
-          <label for="cv">Upload your CV</label>
-          <input class="input" type="file" id="cv" required />
-          <fieldset class="form-fieldset">
-            <legend>Gender</legend>
-            <input type="radio" id="male" name="gender" value="male" />
-            <label for="male">Male</label><br />
-            <input type="radio" id="female" name="gender" value="female" />
-            <label for="female">Male</label><br />
-          </fieldset>
-
-          <fieldset class="form-fieldset">
-            <legend>Agrrements</legend>
-            <input type="checkbox" id="terms" name="terms" required />
-            <label for="agree">I have read all the terms</label><br />
-            <input type="checkbox" id="agree" name="agrrements" required />
-            <label for="agree">Yes, I agree</label><br />
-          </fieldset>
-
-          <div class="signup-btn-container">
-            <button type="submit" class="form-btn primary">Signup</button>
-            <button class="form-btn secondary">Reset</button>
-          </div>
-        </form>
+            <div class="blog-info">
+              <h3 class="blog-sub-heading">
+                By<a
+                  rel="author"
+                  class="bloger"
+                  href="https://www.engadget.com/about/editors/jon-fingas/"
+                >
+                  Jon Fingas
+                </a>
+                On <time datetime="2020-11-30 13:00">November 30, 2020</time>
+              </h3>
+            </div>
+            <img
+              class="blog-img"
+              src="https://c4.wallpaperflare.com/wallpaper/235/349/162/xiaomi-brand-yellow-minimalism-wallpaper-preview.jpg"
+              alt="blog-2"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+              esse aliquid dolor libero culpa veritatis quis porro? Esse
+              voluptatem ducimus amet quae perspiciatis consectetur, cum ab!
+              Vitae, ex! Incidunt atque officiis corrupti et minima a at rerum,
+              sit maiores nulla hic nobis explicabo labore nisi qui
+              reprehenderit ipsum quas enim consequuntur asperiores nemo
+              accusantium dolores omnis? Delectus id sit praesentium autem
+              sapiente, laboriosam similique vero mollitia iste. Sunt, excepturi
+              nam! Voluptas, sit! Nam deserunt quas totam nihil tempore facere
+              fugiat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+              esse aliquid dolor libero culpa veritatis quis porro? Esse
+              voluptatem ducimus amet quae perspiciatis consectetur, cum ab!
+              Vitae, ex! Incidunt atque officiis corrupti et minima a at rerum,
+              sit maiores nulla hic nobis explicabo labore nisi qui
+              reprehenderit ipsum quas enim consequuntur asperiores nemo
+              accusantium dolores omnis? Delectus id sit praesentium autem
+              sapiente, laboriosam similique vero mollitia iste. Sunt, excepturi
+              nam! Voluptas, sit! Nam deserunt quas totam nihil tempore facere
+              fugiat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+              esse aliquid dolor libero culpa veritatis quis porro? Esse
+              voluptatem ducimus amet quae perspiciatis consectetur, cum ab!
+              Vitae, ex! Incidunt atque officiis corrupti et minima a at rerum,
+              sit maiores nulla hic nobis explicabo labore nisi qui
+              reprehenderit ipsum quas enim consequuntur asperiores nemo
+              accusantium dolores omnis? Delectus id sit praesentium autem
+              sapiente, laboriosam similique vero mollitia iste. Sunt, excepturi
+              nam! Voluptas, sit! Nam deserunt quas totam nihil tempore facere
+              fugiat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+              esse aliquid dolor libero culpa veritatis quis porro? Esse
+              voluptatem ducimus amet quae perspiciatis consectetur, cum ab!
+              Vitae, ex! Incidunt atque officiis corrupti et minima a at rerum,
+              sit maiores nulla hic nobis explicabo labore nisi qui
+              reprehenderit ipsum quas enim consequuntur asperiores nemo
+              accusantium dolores omnis? Delectus id sit praesentium autem
+              sapiente, laboriosam similique vero mollitia iste. Sunt, excepturi
+              nam! Voluptas, sit! Nam deserunt quas totam nihil tempore facere
+              fugiat.
+            </p>
+          </article>
+        </div>
       </section>
     </main>
     <footer>
@@ -220,6 +363,8 @@
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
+              stroke="#A0AEFA"
+              stroke-width="2"
               fill-rule="evenodd"
               clip-rule="evenodd"
               d="M0 42.0158C40.6171 39.1937 108.995 38.4637 224.072 44.2393C303.504 48.2259 378.441 57.4064 453.095 66.5521C638.392 89.2527 821.942 111.739 1068.15 54.0581C1274.98 5.59991 1418.3 -1.33374 1500 0.901641V544H0V42.0158Z"
@@ -247,7 +392,7 @@
             <h3>Sitemap</h3>
             <nav class="footer-nav">
               <ul class="footer-nav-list">
-                <li><a hhref="#">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Login</a></li>

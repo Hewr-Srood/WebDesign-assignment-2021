@@ -1,12 +1,15 @@
 #signip-sectin h1 {
   margin-top: 1rem;
 }
+#signip-sectin {
+  height: 40vh;
+}
+
 #signin-form {
-  /* min-height: 50vh; */
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  padding: 1rem 25vw;
+  padding: 1rem 25%;
 }
 .input {
   width: 100%;
@@ -33,6 +36,7 @@
 .signup-btn-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .form-btn {
   margin-top: 1rem;

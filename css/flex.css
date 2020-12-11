@@ -1,0 +1,13 @@
+main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+   
+}
+.aside{
+    /* height: 100%; */
+}
+.blog-img {
+    float: none;
+    width: 100%;
+}
