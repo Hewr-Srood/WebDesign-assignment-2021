@@ -1,24 +1,24 @@
-
+.seminar-header {
+  margin: 1rem 0 2rem 0;
+}
 #schedule {
   width: 100%;
-  border: 2px solid #ECECF8;
+  border: 2px solid #ececf8;
   border-collapse: collapse;
-  
 }
-#schedule  th{
+#schedule th {
   color: #bc59a9;
   text-align: center;
-  border: 2px solid #ECECF8;
-
+  border: 2px solid #ececf8;
 }
 #schedule-table-header th {
-  border: 2px solid #ECECF8;
+  border: 2px solid #ececf8;
   background-color: #dbdbdb;
   padding: 10px;
-  border-bottom: 4px #ECECF8 solid;
+  border-bottom: 4px #ececf8 solid;
 }
 #schedule-table-body td {
-  border: 2px solid #ECECF8;
+  border: 2px solid #ececf8;
   font-weight: 500;
   padding: 10px;
 }
